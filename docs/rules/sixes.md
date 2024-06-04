@@ -23,6 +23,9 @@ The following class limits are required on for official matches. Breaking these 
 #### 1.1.3. Mercenary Off Class Locking
 It is reasonable to restrict mercenaries from playing particular core classes or Sniper; you may **not** restrict mercenaries from playing Pyro, Heavy, Engineer, or Spy. The only exception is restricting a mercenary to play Medic exclusively.
 
+#### 1.1.3. Mercenary Denials
+If a team is contesting a Mercenary Denial as per [6.2.3 of the Global Ruleset](https://docs.ozfortress.com/rules/global/#621-reasonable-mercenary-denial), the administrator team will make a ruling based on the core player's skill level compared to the requested mercenary they are replacing.
+
 ### 1.2. Whitelist (Unlocks)
 The Sixes whitelist can be found [here](https://whitelist.tf/ozfortress_6v6).
 
@@ -33,18 +36,15 @@ The map timer for 5CP maps is 25 minutes.
 #### 1.3.2. 5CP round timer
 The round timer for 5CP maps is 4 minutes (through the usage of the [Progressive Ruleset Timer](/info/server_configs/#progressive-ruleset-timer-plugin)).
 
-#### 1.3.3. Upper Division 5CP round win limit
-ozfortress has adopted the Progressive Ruleset that creates a dynamic win condition for 5CP maps. In the **Upper Divisions**:
+#### 1.3.3. Progressive Ruleset 5CP round win limit
+ozfortress has adopted the Progressive Ruleset that creates a dynamic win condition for 5CP maps for all divisions. 
 
  1. If a team reaches a total of 5 rounds before the end of the map timer, they win the map.
 
  2. If, once the map timer runs out, neither team has reached a total of 5 rounds, the round win limit is set to the current highest round score +1. The match continues until one team meets this new round win limit.
     - for example, if the score is currently 2-3, the round win limit is set at 4.
 
-#### 1.3.4. Lower Division 5CP round win limit
-ozfortress has adopted the Progressive Ruleset that creates a dynamic win condition for 5CP maps. In the **Lower Divisions**:
-
- 1. If a team reaches a total of 5 rounds before the end of the map timer, they win the map.
+change here - 1. If a team reaches a total of 5 rounds before the end of the map timer, they win the map.
 
  2. If, once the map timer runs out, a team has more rounds than the other, they win the map.
 
@@ -59,42 +59,46 @@ In Sixes, all King of the Hill (KOTH) maps follow a best of five win condition w
 
 ## 2. Sixes Playoffs
 ### 2.1. Playoff Match Format
-Playoff matches are almost exclusively played as a best of three (BO3) series with maps selected from the map pool. Upper division Grand Final matches are played as a best of five (BO5) series. 
+Playoff matches are almost exclusively played as a best of three (BO3) series with maps selected from the map pool. Premier and High Division Grand Final matches are played as a best of five (BO5) series. 
 
 #### 2.1.1. High Grand Finals
-High teams are expected to play Grand Final matches as a best of five (BO5) series. However, two High teams can agree to play a best of three (BO3) series instead.
+High teams are expected to play Grand Final matches as a best of five (BO5) series. 
 
-#### 2.1.2. Upper Division Grand Final Scheduling
-The Premier Grand Final match occurs on a predetermined date as communicated on the seasonal league page. The High Grand Final match does not occur on a predetermined date, however may not be scheduled on the same night as the Premier Grand Final.
+#### 2.1.2. High Grand Final Scheduling
+The High Grand Final match is organised the same as any other round, however, it may not be scheduled on the same night as the Premier Grand Final.
 
-### 2.2. Upper Division Playoffs
-Upper Division Playoffs follow the AFL final eight system as described [here](https://en.wikipedia.org/wiki/AFL_final_eight_system).
+### 2.2. Division Playoffs
+The top four teams of the Regular Season participate in Page Playoffs as described [here](/rules/global/#261-page-playoffs).
 
-### 2.3. Lower Division Playoffs
-In the Lower Divisions of Sixes, the top four team of the Regular Season participate in Page Playoffs as described [here](/rules/global/#261-page-playoffs).
+### 2.3. Map Selection Order
+#### 2.3.1. BO2 Matches
+For seasonal matches following a best of two (BO2) format where there are four maps to choose from, the **home team** is awarded the first map pick.
 
-### 2.4. Playoff Map Selection Order
-#### 2.4.1. Upper Division BO3 Playoff Matches
-For **Upper Division** Playoff matches following a best of three (BO3) format, the **higher seeded team** is awarded a map pick advantage prior to bans.
+1. **Home Team bans** a map
+2. **Away Team bans** a map
+3. **Home Team picks** a map
+4. The remaining map is played.
+
+#### 2.3.2. BO3 Playoff Matches
+For Playoff matches following a best of three (BO3) format, the **higher seeded team** is awarded the final map pick.
 
 The **higher seeded team** is **Team A**. **Maps must be played in the order in which they were picked.**
 
-![Sixes Upper Division BO3 Pick/Ban Order](https://i.ibb.co/gTB25FW/sixesupperbo3.png){: style="height:75px;" }
+![Sixes BO3 Pick/Ban Order](https://i.ibb.co/HnHCd3z/sixeslowerbo3.png){: style="height:75px;" }
 
-1. **Team A picks** a map
-2. **Team A bans** a map
-3. **Team B bans** a map
-4. **Team A bans** a map
+1. **Team A bans** a map
+2. **Team B bans** a map
+3. **Team A picks** a map
+4. **Team B picks** a map
 5. **Team B bans** a map
 6. **Team A picks** a map
-6. **Team B picks** a map
 
-#### 2.4.2. Upper Division BO5 Playoff Matches
-For **Upper Division** Playoff matches following a best of five (BO5) format, neither team is awarded an advantage. 
+#### 2.3.3. BO5 Playoff Matches
+For Playoff matches following a best of five (BO5) format, neither team is awarded an advantage. 
 
 The **higher seeded team** is **Team A**. **Maps must be played in the order in which they were picked.**
 
-![Sixes Upper Division BO5 Pick/Ban Order](https://i.ibb.co/28FhMbz/sixesupperbo5.png){: style="height:75px;" }
+![Sixes BO5 Pick/Ban Order](https://i.ibb.co/28FhMbz/sixesupperbo5.png){: style="height:75px;" }
 
 1. **Team A picks** a map
 2. **Team B picks** a map
@@ -105,18 +109,3 @@ The **higher seeded team** is **Team A**. **Maps must be played in the order in 
 7. **Team A bans** a map
 8. **Team B bans** a map
 9. The remaining map is picked
-
-#### 2.4.3. Lower Division BO3 Playoff Matches
-For **Lower Division** Playoff matches following a best of three (BO3) format, the **higher seeded team** is awarded the final map pick.
-
-The **higher seeded team** is **Team A**. **Maps must be played in the order in which they were picked.**
-
-![Sixes Lower Division BO3 Pick/Ban Order](https://i.ibb.co/HnHCd3z/sixeslowerbo3.png){: style="height:75px;" }
-
-1. **Team A bans** a map
-2. **Team B bans** a map
-3. **Team A picks** a map
-4. **Team B picks** a map
-5. **Team A bans** a map
-6. **Team B bans** a map
-7. **Team A picks** a map
